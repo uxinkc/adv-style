@@ -194,9 +194,9 @@
       height: $button-height;
       font-size: $button-font-size;
       padding:
-        ($button-padding - .1rem)
-        ($button-padding * 1.5)
-        ($button-padding - .1rem)
+        calc(#{$button-padding} - .1rem)
+        calc(#{$button-padding} * 1.5)
+        calc(#{$button-padding} - .1rem)
       ;
     }
 

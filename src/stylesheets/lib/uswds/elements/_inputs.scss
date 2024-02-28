@@ -7,14 +7,14 @@ $input-padding-vertical: 1rem;
 // input heights will vary by browser and type
 // if height not explicitly set
 $input-height-exact: (
-  ($base-font-size * $input-line-height) +
-  ($input-padding-vertical * 2) +
-  ($input-border-width * 2)
+  calc(#{$base-font-size} * #{$input-line-height}) +
+  calc(#{$input-padding-vertical} * 2) +
+  calc(#{$input-border-width} * 2)
 );
 
 // truncated to 1 decimal place
 // (i.e., 1.21rem -> 1.2rem)
-$input-height: floor($input-height-exact * 10) / 10;
+$input-height: floor(#{$input-height-exact} * 10) / 10;
 
 // Block form elements
 /* stylelint-disable selector-no-qualifying-type */

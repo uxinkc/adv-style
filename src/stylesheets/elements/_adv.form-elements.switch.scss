@@ -3,8 +3,8 @@
 
 $switch: adv-switch;
 $switch-height: 2rem;
-$switch-width: ($switch-height * 2);
-$switch-thumb-size: $switch-height - .4rem;
+$switch-width: calc(#{$switch-height} * 2);
+$switch-thumb-size: calc(#{$switch-height} - .4rem);
 $switch-bg-color-off: tint($color-adv-tertiary, 60%);
 $switch-bg-color-on: $form-checkbox-radio-fill;
 $switch-border-color: transparent;

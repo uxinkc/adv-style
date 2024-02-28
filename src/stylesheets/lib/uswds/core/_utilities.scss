@@ -210,7 +210,7 @@
       border-left: $sidenav-current-border-width solid $color-primary;
       color: $color-primary;
       font-weight: $font-bold;
-      padding-left: $site-margins-mobile - $sidenav-current-border-width;
+      padding-left: calc(#{$site-margins-mobile} - #{$sidenav-current-border-width});
     }
   }
 }

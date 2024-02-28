@@ -51,7 +51,7 @@
 
   &__secondary {
 
-    font-size: $font-size-0 - .1rem;
+    font-size: calc(#{$font-size-0} - .1rem);
     position: relative;
     display: flex;
     align-items: flex-end;

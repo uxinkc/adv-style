@@ -209,7 +209,7 @@
     }
 
     .adv-content-tabs__label--small & {
-      padding-top: ($tab-padding - $size-base);
+      padding-top: calc(#{$tab-padding} - #{$size-base});
       padding-bottom: $tab-padding;
     }
 

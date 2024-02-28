@@ -26,8 +26,8 @@
   background: $color-adv-secondary;
   border-radius: 100%;
   cursor: pointer;
-  height: ($size-medium - $size-base );
-  width: ($size-medium - $size-base );
+  height: calc(#{$size-medium} - #{$size-base} );
+  width: calc(#{$size-medium} - #{$size-base} );
 }
 
 @mixin range-ms-fill {

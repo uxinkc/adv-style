@@ -72,7 +72,7 @@ $timeline: adv-timeline;
     & {
       position: absolute;
       padding: $size-base $size-small;
-      left: ($size-default - .1rem);
+      left: calc(#{$size-default} - .1rem);
       top: -( math.div($size-base, 2) );
       background-color: $color-adv-base-bg;
       display: flex;
@@ -80,8 +80,8 @@ $timeline: adv-timeline;
       align-items: center;
       line-height: $line-height-flat;
       color: $color-adv-tertiary;
-      height: ($size-medium + $size-base);
-      width: ($size-medium + $size-base);
+      height: calc(#{$size-medium} + #{$size-base});
+      width: calc(#{$size-medium} + #{$size-base});
       border-radius: $radius-oval;
     }
     .#{$timeline}__item--user & {

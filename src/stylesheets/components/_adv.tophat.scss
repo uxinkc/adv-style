@@ -108,7 +108,7 @@
 
     @include breakpoint(M) {
       display: inline-block;
-      height: ($size-medium - .4rem);
+      height: calc(#{$size-medium} - .4rem);
       margin-right: $size-base;
       margin-top: -3px;
       vertical-align: middle;

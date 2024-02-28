@@ -41,14 +41,14 @@
     & {
       @include reset-button();
       @include font-size(0);
-      height: $form-height-default - $size-small;
+      height: calc(#{$form-height-default} - #{$size-small});
       cursor: initial;
       display: flex;
       align-items: center;
       width: 100%;
       text-align: center;
       text-decoration: none;
-      padding: ($labelPadding + $size-base) ($labelPadding * 3);
+      padding: calc(#{$labelPadding} + #{$size-base}) calc(#{$labelPadding} * 3);
       background-color: $color-adv-tertiary-100;
       color: $color-adv-base;
       position: relative;
@@ -87,7 +87,7 @@
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: $arrowMagicNumber 0 $arrowMagicNumber ($arrowMagicNumber - .8rem); // super magical number
+      border-width: $arrowMagicNumber 0 $arrowMagicNumber calc(#{$arrowMagicNumber} - .8rem); // super magical number
       z-index: 1;
 
       @include breakpoint(L) {

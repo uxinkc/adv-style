@@ -58,7 +58,7 @@
 
     @include adv-button-reset;
     width: $size-extra-large;
-    height: ($size-extra-large - $size-small);
+    height: calc(#{$size-extra-large} - #{$size-small});
     position: absolute;
     top: 0;
     right: 0;

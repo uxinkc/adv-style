@@ -82,12 +82,12 @@ $button-plain-border-width: 0;
     font-weight: $button-font-weight;
     display: inline-block;
     display: inline-flex;
-    gap: ($size-small * .75);
+    gap: calc(#{$size-small} * .75);
     align-items: center;
     border-radius: $button-border-radius;
 
     // scss-lint:disable Shorthand
-    padding: ($button-padding - .1rem);
+    padding: calc(#{$button-padding} - .1rem);
 
     // -------------------------------------------------------------------------
     // default
@@ -260,7 +260,7 @@ $button-plain-border-width: 0;
 
     height: $button-height;
     // scss-lint:disable SpaceAfterPropertyColon TrailingSemicolon Shorthand
-    padding: ($button-padding - .1rem);
+    padding: calc(#{$button-padding} - .1rem);
     font-size: $button-font-size;
 
   }
@@ -270,7 +270,7 @@ $button-plain-border-width: 0;
     height: $button-height--lg;
 
     // scss-lint:disable SpaceAfterPropertyColon TrailingSemicolon Shorthand
-    padding: calc((#{$button-padding}) + .2rem);
+    padding: calc(#{$button-padding} + .2rem);
     font-size: $font-size-4; // no we're not using mixin cuz we don't want its line-height
     border-radius: calc(#{$button-border-radius} * 1.5);
 

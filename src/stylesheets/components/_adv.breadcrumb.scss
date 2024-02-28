@@ -83,7 +83,7 @@
         margin-right: $size-base;
         background-image: url('#{$image-path}/material-design-icons/ic_arrow_back_24px.svg');
         background-position: center;
-        background-size: ($size-medium - $size-base);
+        background-size: calc(#{$size-medium} - #{$size-base});
       }
     }
 

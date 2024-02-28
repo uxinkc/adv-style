@@ -106,7 +106,7 @@ th {
     vertical-align: top;
 
     @include breakpoint(M, down) {
-      padding: $table-padding - $size-base;
+      padding: calc(#{$table-padding} - #{$size-base});
     }
 
   }

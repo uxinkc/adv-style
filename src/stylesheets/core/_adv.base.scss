@@ -85,7 +85,7 @@ tt {
 kbd {
   @include font-size(0);
   background-color: white;
-  padding: ($size-base * .25) ($size-base + math.div($size-base, 2));
+  padding: calc(#{$size-base} * .25) calc(#{$size-base} + math.div($size-base, 2));
   color: $color-adv-tertiary;
   border: 1px solid $color-adv-tertiary-200;
   box-shadow: 0 1px 0 $color-adv-tertiary-200;

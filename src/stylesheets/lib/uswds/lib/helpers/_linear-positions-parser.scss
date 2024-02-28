@@ -44,7 +44,7 @@
       $spec: to _position-flipper($pos);
     }
     @else {
-      $degree: -270 - $pos; //rotate the gradient opposite from spec
+      $degree: calc(-270 - #{$pos}); //rotate the gradient opposite from spec
       $spec: $pos;
     }
   }
