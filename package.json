@@ -1,7 +1,7 @@
 {
   "name": "adv-style",
   "description": "Design System Resource",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "SEE LICENSE in LICENSE.md",
   "repository": {
