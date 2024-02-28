@@ -1,0 +1,56 @@
+// This overrides a lot of USWDS' _typography.scss, with other additions
+
+p {
+  line-height: inherit;
+  margin-top: $size-small;
+  margin-bottom: $size-small;
+}
+
+a {
+
+  &           { color: $color-adv-link; text-decoration-skip-ink: auto; }
+
+  &:visited   { color: $color-adv-link-visited; }
+
+  &:hover     { color: $color-adv-link-hover; }
+
+  &[disabled] { pointer-events: none; cursor: not-allowed; } // hacky, and technically invalid HTML but does the intended job.
+
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: $font-sans; // redundant, but some browsers required this to be explicit
+}
+
+h1, .h1 { @include adv-header('1'); }
+h2, .h2 { @include adv-header('2'); }
+h3, .h3 { @include adv-header('3'); }
+h4, .h4 { @include adv-header('4'); }
+h5, .h5 { @include adv-header('5'); }
+h6, .h6 { @include adv-header('6'); }
+
+// scss-lint:disable SelectorFormat
+.adv-text--lead,
+.adv-font-lead,
+.usa-font-lead {
+
+  @include font-size(4);
+  line-height: $line-height-medium;
+  max-width: 70ch;
+
+  @include breakpoint(M) {
+    font-weight: $font-light;
+    font-size: $lead-font-size;
+    line-height: $lead-line-height;
+    margin-bottom: $size-medium;
+  }
+
+  strong {
+    font-weight: bolder;
+  }
+
+}

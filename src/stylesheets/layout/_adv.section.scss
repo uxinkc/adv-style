@@ -1,0 +1,44 @@
+.adv-section {
+
+  & {
+    padding-left: $size-default;
+    padding-right: $size-default;
+    padding-bottom: $size-default;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+  }
+
+  &--fullscreen {
+    @include breakpoint(L) {
+      padding-left: $size-medium;
+      padding-right: $size-medium;
+    }
+  }
+
+  &--dark,
+  &--contrast {
+    background-color: $color-adv-tertiary-100;
+  }
+
+  &--darker {
+    background-color: $color-adv-tertiary-200;
+  }
+
+  &--white,
+  &--light {
+    background-color: $color-adv-white;
+  }
+
+  &__bd {
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $site-max-width;
+
+    .adv-section--fullscreen > & {
+      max-width: none;
+    }
+
+  }
+
+}
