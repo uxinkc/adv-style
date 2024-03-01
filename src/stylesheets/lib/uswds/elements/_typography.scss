@@ -54,13 +54,13 @@ a {
 // [href^="http:"]:not([href*="my-domain.com"])
 // [href^="https:"]:not([href*="my-domain.com"])
 
-.usa-external_link {
+/* .usa-external_link {
   @include external-link(external-link, external-link-hover);
 }
 
 .usa-external_link-alt {
   @include external-link(external-link-alt, external-link-alt-hover);
-}
+} */
 
 h1,
 h2,
